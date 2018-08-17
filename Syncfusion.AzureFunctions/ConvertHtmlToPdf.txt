@@ -1,0 +1,33 @@
+﻿Microsoft.Azure.WebJobs.Host.FunctionInvocationException: Exception while executing function: ConvertHtmlToPdf ---> Syncfusion.Pdf.PdfException: Failed to convert the webpage
+   at Syncfusion.Pdf.HtmlToPdf.HtmlToPdfResult.RenderWebKit(PdfPageBase page, PdfLayoutFormat format)
+   at Syncfusion.Pdf.HtmlToPdf.HtmlToPdfResult.Render(PdfPageBase page, PdfLayoutFormat format)
+   at Syncfusion.HtmlConverter.HtmlToPdfConverter.Convert(String htmlString, String baseUrl)
+   at Syncfusion.AzureFunctions.ConvertHtmlToPdf.ConvertFromHtml(String htmlString)
+   at Syncfusion.AzureFunctions.ConvertHtmlToPdf.Run(HttpRequestMessage req, TraceWriter log, ExecutionContext executionContext)
+   at lambda_method(Closure , ConvertHtmlToPdf , Object[] )
+   at Microsoft.Azure.WebJobs.Host.Executors.MethodInvokerWithReturnValue`2.InvokeAsync(TReflected instance, Object[] arguments)
+   at Microsoft.Azure.WebJobs.Host.Executors.FunctionInvoker`2.<InvokeAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.Azure.WebJobs.Host.Executors.FunctionExecutor.<InvokeAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.Azure.WebJobs.Host.Executors.FunctionExecutor.<ExecuteWithWatchersAsync>d__23.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.Azure.WebJobs.Host.Executors.FunctionExecutor.<ExecuteWithLoggingAsync>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at Microsoft.Azure.WebJobs.Host.Executors.FunctionExecutor.<ExecuteWithLoggingAsync>d__16.MoveNext()
+   --- End of inner exception stack trace ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.Azure.WebJobs.Host.Executors.FunctionExecutor.<ExecuteWithLoggingAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.Azure.WebJobs.Host.Executors.FunctionExecutor.<TryExecuteAsync>d__13.MoveNext()
